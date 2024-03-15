@@ -1,0 +1,14 @@
+<div class="container my-3">
+    <h4>Add your Todos</h4>
+    <form (ngSubmit)="onSubmit()" [formGroup]="todoForm">
+        <div class="mb-3">
+            <label for="title" class="form-label">Add Your Todo Title</label>
+            <input type="text" class="form-control" formControlName="title" aria-describedby="titletodo" id="title">
+        </div>
+        <div class="mb-3">
+            <label for="desc" class="form-label">Add Your Todo Description</label>
+            <input type="text" class="form-control" formControlName="desc" id="desc">
+        </div>
+        <button type="submit" class="btn btn-sm btn-primary">Add Todo</button>
+    </form>
+</div>
